@@ -8,185 +8,195 @@ body{
    
     overflow-x: hidden;
     background-color: rgb(184, 180, 180);
+    font-family: Arial, Helvetica, sans-serif;
 }
+
+/* HEADER */
 
 .container{
   display: flex;
   justify-content: space-around;
   align-items: center;
   background-color: white;
-  width: 100vw;
+  padding: 0 40px ;
   height: 60px;
 }
 
 .menu{
   display: flex;
-  justify-content: space-around;
+ gap: 25px;
+  /*gap: 20px;*/
 
 }
 .menu1{
-  
-  margin: 20px;
+  cursor: pointer;
 }
 
 .menu1:hover{
   
- border-bottom: 1px solid black;
+ border-bottom: 2px solid black;
  transition: 0.6s;
 }
 
-.div{
-  display: flex;
-  justify-content: center;
-}
+/* banner */
+
 .img{
   width: 100%;
 }
+
+
+/* Planos */
 
 .tel{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    height: 500px;
+    gap: 20px;
+    padding: 40px;
 }
+
 section > h3{
   text-align: center;
-   font-size: 32px;
-   font-weight: 600;
-  font-family: Arial, Helvetica, sans-serif;
+  font-size: 32px;
+  font-weight: 600;
   color: #40b6e7;
-  margin: 50px;
+  margin: 40px 0;
 }
 
 .planos{
     display: flex;
     flex-direction: column;
     align-items: center;
-    box-shadow: 0px  3px 5px black;
+    justify-content: center;
+    box-shadow: 0px  3px 5px rgba(0,0, 0,0.2);
     background-color: white;
-    border-radius: 1rem 1rem ;
-     
-   
+    border-radius: 12px;
     width: 300px;
-    height: 400px;
+    height: 350px;
     margin: 20px;
     padding: 10px;
     cursor: pointer;
+    transition: 0.3s;
+}
+
+.planos:hover{
+  transform: translate(-5px);
 }
 .planos > h4{
   width: 200px;
 
 }
 
+/* Área do cliente */
+
 .boleto{
   display: flex;
-  height: 400px;
+  justify-content: space-around;
+  align-items: center;
   background-color: whitesmoke;
-  
+  padding: 40px;
+  flex-wrap: wrap;
 }
+
 .cliente{
  display: flex;
  flex-direction: column;
- 
- margin: 100px;
+ text-align: center;
  align-items: center;
- }
+ max-width: 400px;
+}
+
 .cliente h3{
-  display: flex;
-  flex-direction: column;
-  
-  align-items: center;
-  font-size: 48px;
-  font-family: Arial, Helvetica, sans-serif;
+ font-size: 36px;
 }
-.cliente p {
-   font-size: 18px;
-   margin-right: 120px;
-}
+
 button{
   width: 160px;
   height: 40px;
   margin: 40px;
-  background-color: red;
+  background-color: rgb(155, 150, 150);
   border: none;
-  border-radius: 15px;
-   margin-right: 300px;
+  border-radius: 10px;
 }
 button:hover{
  cursor: pointer;
+ opacity: 0.8;
+ color: white;
+ background-color: #46c3f1;
 }
+
+
 .cliente01 {
-  
-  width: 320px;
-  height: 310px;
-  margin-left: 80px;
- 
+  width: 280px; 
 }
+
+
+ /* info */
+
 main{
   background-color:hsl(196, 86%, 61%) ;
-  border-bottom: 0px 3px 3px 10px rgb(29, 29, 24);
- 
-  height: 300px;
-   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  padding: 40px;
 }
+
+
 .informacao{
   display: flex;
   justify-content: center;
-  align-items: center;
+  flex-wrap: nowrap;
+  gap: 30px;  
 }
+
 .suporte{
-  
   margin: 20px;
   height: 200px;
  
 }
 .suporte > p{
   text-align: center;
- font-weight: 700;
- color: white;
+ font-weight: 100;
+ color: rgb(0, 0, 0);
 }
 .info{
  text-align: center;
  margin: 20px;
 }
 
-.filmes {
-  height: 500px;
-  display: flex;
+/* streamig */
 
+.filmes{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+   padding: 80px;
+  background-color: rgb(255, 255, 255);
 }
-.plataforma > img{
-  margin-right: 100px;
+.plataforma{
+ gap: 50px;
+ margin: 20px;
 }
-.plataforma {
+.watch h3{
+  font-size: 30px;
+   margin-bottom: 10px;
+}
+.watch p{
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+.watch{
   display: flex;
   flex-direction: column;
-  text-align: center;
+  margin: 20px;
+}
+
+.watchh{
+  width: 300px;
 }
 
 footer{
   display: flex;
   justify-content: center;
-}
-
-.plataforma{
- display: flex;
- flex-direction: column;
- 
- margin: 100px;
- align-items: center;
- }
-.plataforma h3{
-  display: flex;
-  flex-direction: column;
-  
   align-items: center;
-  font-size: 48px;
-  font-family: Arial, Helvetica, sans-serif;
-}
-.plataforma p {
-   font-size: 18px;
-   margin-right: 120px;
+  height: 300px;
+  text-align: center;
+  background-color:hsl(196, 86%, 61%) ;
 }
