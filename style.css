@@ -1,3 +1,6 @@
+@import "bootstrap-icons/font/bootstrap-icons";
+
+
 *{
    list-style: none;
    box-sizing: border-box;
@@ -7,7 +10,7 @@
 body{
    
     overflow-x: hidden;
-    background-color: rgb(184, 180, 180);
+    background-color: whitesmoke;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -17,25 +20,25 @@ body{
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: white;
+ 
   padding: 0 40px ;
   height: 60px;
 }
 
 .menu{
   display: flex;
- gap: 25px;
-  /*gap: 20px;*/
+   gap: 20px;
 
 }
 .menu1{
   cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
 }
 
 .menu1:hover{
   
- border-bottom: 2px solid black;
- transition: 0.6s;
+ color: #007BFF;
 }
 
 /* banner */
@@ -47,28 +50,29 @@ body{
 
 /* Planos */
 
-.tel{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 40px;
-}
-
-section > h3{
+.banner-section > h3{
   text-align: center;
   font-size: 32px;
   font-weight: 600;
   color: #40b6e7;
   margin: 40px 0;
+  background-color: whitesmoke;
 }
+.tel{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 40px;    
+}
+
 
 .planos{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    box-shadow: 0px  3px 5px rgba(0,0, 0,0.2);
+    box-shadow: 0px  3px 5px 5px rgba(10, 10, 10, 0.2);
     background-color: white;
     border-radius: 12px;
     width: 300px;
@@ -84,7 +88,6 @@ section > h3{
 }
 .planos > h4{
   width: 200px;
-
 }
 
 /* Área do cliente */
@@ -96,6 +99,7 @@ section > h3{
   background-color: whitesmoke;
   padding: 40px;
   flex-wrap: wrap;
+  box-shadow: 0px  3px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 .cliente{
@@ -113,7 +117,7 @@ section > h3{
 button{
   width: 160px;
   height: 40px;
-  margin: 40px;
+  margin: 20px;
   background-color: rgb(155, 150, 150);
   border: none;
   border-radius: 10px;
@@ -123,6 +127,7 @@ button:hover{
  opacity: 0.8;
  color: white;
  background-color: #46c3f1;
+
 }
 
 
@@ -133,17 +138,20 @@ button:hover{
 
  /* info */
 
+
 main{
   background-color:hsl(196, 86%, 61%) ;
   padding: 40px;
-}
 
+
+}
 
 .informacao{
   display: flex;
   justify-content: center;
   flex-wrap: nowrap;
   gap: 30px;  
+
 }
 
 .suporte{
@@ -153,8 +161,7 @@ main{
 }
 .suporte > p{
   text-align: center;
- font-weight: 100;
- color: rgb(0, 0, 0);
+  font: 14pt optional normal;
 }
 .info{
  text-align: center;
@@ -167,8 +174,8 @@ main{
   display: flex;
   justify-content: space-between;
   align-items: center;
-   padding: 80px;
-  background-color: rgb(255, 255, 255);
+  padding: 80px;
+  background-color: whitesmoke;
 }
 .plataforma{
  gap: 50px;
@@ -194,9 +201,20 @@ main{
 
 footer{
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  padding: 5rem;
   height: 300px;
   text-align: center;
   background-color:hsl(196, 86%, 61%) ;
+}
+hr{
+  width: auto 0px;
+  margin: 13px;
+  border: 1px solid black;
+}
+
+.footer1{
+  display: flex;
+ 
 }
