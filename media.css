@@ -1,0 +1,26 @@
+@media  (max-width: 768px) {
+    .informacao{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .filmes{
+        display: flex;
+        flex-direction: column;
+    }
+    .watch{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .watch > h3{
+        text-align: center;
+    }
+    .watch > p {
+        text-align: center;
+    }
+    .plataforma{
+        align-items: center;
+        width: 300px;
+    }
+}

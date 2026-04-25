@@ -205,7 +205,8 @@ main{
 }
 .suporte > p{
   text-align: center;
-  font: 14pt optional normal;
+  font-size: 0.9rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .info{
  text-align: center;
